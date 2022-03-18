@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.center {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: #ffbc14;
+    padding: 15px 0;
+    height: 80px;
+    border-bottom: 1.5px solid #cecece;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    width: 230px;
+    height: 50px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    text-align: right;
+}
+
+.menu a {
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: all .2s ease-in;
+}
+
+.menu a:hover {
+    color: #883a3a;
+}
+
+.menu .btn-contato {
+    background-color: transparent;
+    padding: 0 20px;
+    border: 2px solid #883a3a;
+    border-radius: 7px;
+    margin: 0 25px;
+}
+
+.menu .btn-contato:hover {
+    background-color: white;
+    border: 2px solid white;
+    color: #883a3a;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: #e1e1e1;
+}
+
+.card-home {
+    display: flex;
+}
+
+.card-home .card-home-dados {
+    width: 90%;
+    margin-top: 80px;
+    padding: 0 25px;
+    text-align: start;
+}
+
+.card-home .card-home-dados h1 {
+    margin-top: 100px;
+    font-size: 1.9em;
+}
+
+.card-home .card-home-dados p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.card-home .card-home-dados span {
+    color: #b38000;
+    font-size: 1em;
+}
+
+.card-home-imagem {
+    margin-top: 170px;
+    width: 750px;
+    height: 400px;
+}
+
+.card-home-imagem img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+@media screen and (max-width:768px) {
+    .home {
+        width: 100%;
+        height: 640px;
+        background-color: #e1e1e1;
+    }
+    .card-home {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-home .card-home-dados {
+        text-align: center;
+        margin-top: 100px;
+    }
+    .card-home .card-home-dados h1 {
+        margin-top: 5px;
+        font-size: 1.4em;
+    }
+    .card-home .card-home-dados p {
+        font-size: 1em;
+    }
+    .card-home-imagem {
+        margin: 30px auto;
+        width: 340px;
+        height: 260px;
+    }
+}
