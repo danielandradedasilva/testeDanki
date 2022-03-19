@@ -10,6 +10,7 @@
     margin: 0 auto;
     padding: 0 2%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -21,11 +22,12 @@ header {
     border-bottom: 1.5px solid #cecece;
     position: fixed;
     width: 100%;
+    z-index: 9999;
 }
 
 .logo {
-    width: 230px;
-    height: 50px;
+    width: 180px;
+    height: 55px;
 }
 
 .logo img {
@@ -64,6 +66,7 @@ header {
 }
 
 .home {
+    max-width: 1500px;
     width: 100%;
     height: 100vh;
     background-color: #e1e1e1;
@@ -104,7 +107,92 @@ header {
 .card-home-imagem img {
     width: 100%;
     height: 100%;
-    border-radius: 25px;
+    border-radius: 15px;
+}
+
+.main-cta {
+    width: 100%;
+    margin: 60px 0;
+    text-align: center;
+}
+
+.main-cta>h2 {
+    color: #883a3a;
+    font-size: 2.2em;
+}
+
+.main-cta p {
+    color: gray;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.main-cta button {
+    background-color: transparent;
+    padding: 6px 16px;
+    display: inline-block;
+    border: 2px solid #883a3a;
+    border-radius: 7px;
+    margin: 0 25px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.main-cta button:hover {
+    background-color: #883a3a;
+    color: #ffffff;
+    border: 2px solid #883a3a;
+}
+
+.diferenciais {
+    display: flex;
+    justify-content: center;
+}
+
+.diferencial-single {
+    background-color: #919191;
+    width: 24%;
+    height: fit-content;
+    margin-right: 1%;
+    padding: 40px 30px;
+    border-radius: 15px;
+    transition: all .2s ease;
+}
+
+.diferencial-single:hover {
+    transform: scale(1.06);
+}
+
+.diferencial-single i {
+    color: #00bbff;
+    font-size: 1.6em;
+}
+
+.diferencial-single h2 {
+    color: #ffb30f;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.diferencial-single p {
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+}
+
+@media screen and (max-width:1023px) {
+    .menu {
+        display: none;
+    }
+    .card-home .card-home-dados {
+        text-align: center;
+        margin-top: 100px;
+    }
+    .card-home-imagem {
+        margin-top: 170px;
+        width: 550px;
+        height: 300px;
+        margin-right: 5%;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -129,8 +217,24 @@ header {
         font-size: 1em;
     }
     .card-home-imagem {
-        margin: 30px auto;
-        width: 340px;
-        height: 260px;
+        margin: 20px auto;
+        width: 90%;
+        height: 360px;
+        margin-right: 4%;
+    }
+    .diferenciais {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+        margin-left: 3%;
+    }
+    .diferencial-single {
+        background-color: #919191;
+        width: 95%;
+        margin-bottom: 15px;
+    }
+    .diferencial-single:hover {
+        transform: none;
     }
 }
